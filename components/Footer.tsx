@@ -1,6 +1,24 @@
 
 
 
+function Logo() {
+  return (
+    <a
+      href="#top"
+      className="flex items-center gap-2.5"
+      data-testid="link-logo"
+      aria-label="Accredian Enterprise home"
+    >
+      <span className="grid h-9 w-9 place-items-center rounded-full bg-[hsl(var(--secondary))] text-[hsl(var(--primary))]">
+        <span className="h-3.5 w-3.5 rounded-full border-[3px] border-current" />
+      </span>
+      <span className="font-mono text-[13px] font-medium tracking-[-.04em]">
+        ACCREDIAN<span className="text-[hsl(var(--accent))]">/</span>ENT.
+      </span>
+    </a>
+  );
+}
+
 export default function Footer() {
   return (
     <footer className="bg-[hsl(var(--primary))] py-12 text-[hsl(var(--primary-foreground))]">
