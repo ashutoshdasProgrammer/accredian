@@ -1,5 +1,7 @@
 
-
+import Link from "next/link";
+// import { Linkedin, Instagram } from "lucide-react";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
 
 function Logo() {
   return (
@@ -30,7 +32,7 @@ export default function Footer() {
               The capability partner for people leaders building what’s next.
             </p>
             <div className="mt-6 flex gap-3">
-              <a
+              <Link
                 href="https://www.linkedin.com"
                 target="_blank"
                 rel="noreferrer"
@@ -38,9 +40,9 @@ export default function Footer() {
                 className="grid h-9 w-9 place-items-center rounded-full border border-[hsl(var(--primary-foreground)/.25)]"
                 data-testid="link-social-linkedin"
               >
-                <Linkedin size={15} />
-              </a>
-              <a
+                <FaLinkedin size={15} />
+              </Link>
+              <Link
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noreferrer"
@@ -48,8 +50,8 @@ export default function Footer() {
                 className="grid h-9 w-9 place-items-center rounded-full border border-[hsl(var(--primary-foreground)/.25)]"
                 data-testid="link-social-instagram"
               >
-                <Instagram size={15} />
-              </a>
+                <FaInstagram size={15} />
+              </Link>
             </div>
           </div>
           {[
@@ -85,14 +87,14 @@ export default function Footer() {
               </h3>
               <div className="space-y-3">
                 {(items as string[][]).map(([label, href]) => (
-                  <a
+                  <Link
                     key={label}
                     href={href}
                     className="block text-sm text-[hsl(var(--primary-foreground)/.62)] transition-colors hover:text-[hsl(var(--primary-foreground))]"
                     data-testid={`link-footer-${label.toLowerCase().replaceAll(" ", "-")}`}
                   >
                     {label}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -101,12 +103,12 @@ export default function Footer() {
         <div className="flex flex-col justify-between gap-4 pt-6 text-[10px] uppercase tracking-[.12em] text-[hsl(var(--primary-foreground)/.4)] sm:flex-row">
           <span>© 2024 Accredian Enterprise</span>
           <div className="flex gap-6">
-            <a href="#contact" data-testid="link-footer-privacy">
+            <Link href="#contact" data-testid="link-footer-privacy">
               Privacy
-            </a>
-            <a href="#contact" data-testid="link-footer-terms">
+            </Link>
+            <Link href="#contact" data-testid="link-footer-terms">
               Terms
-            </a>
+            </Link>
             <span>Made for meaningful work</span>
           </div>
         </div>
