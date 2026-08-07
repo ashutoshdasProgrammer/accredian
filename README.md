@@ -12,14 +12,14 @@
 ### Approach Taken
 In the folder structure we have app/ and components/
 app/ and components/
-    - Inside the app/ folder 
-        -- we have create the base tsx file <page.tsx> that will contain all the different components together can will create the webpage that we needed
-        -- we have <not-found.tsx> file so if anyone goes for the wrong file that is not present in the website then we will show them the custom error page.
-    - Inside the components/ folder
-        -- here we have different components file and animations folder that we use in our components to animate them so they look better like for scrolling, fadeing in and out etc...
-        -- we group together different components file in <page.tsx>
+- Inside the app/ folder 
+    - we have create the base tsx file <page.tsx> that will contain all the different components together can will create the webpage that we needed
+    - we have <not-found.tsx> file so if anyone goes for the wrong file that is not present in the website then we will show them the custom error page.
+- Inside the components/ folder
+    - here we have different components file and animations folder that we use in our components to animate them so they look better like for scrolling, fadeing in and out etc...
+    - we group together different components file in <page.tsx>
 
-    Here we focused on reuseability of the web components like animation, fadein-out.tsx using them again and agian.
+Here we focused on reuseability of the web components like animation, fadein-out.tsx using them again and agian.
 
 For this project I have used tailwind.css to design the frontend.
 
