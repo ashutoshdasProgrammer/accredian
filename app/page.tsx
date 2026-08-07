@@ -5,8 +5,8 @@ import Stats from '@/components/Stats';
 import Approach from '@/components/Approach';
 import Process from '@/components/Process';
 import Testimonials from '@/components/Testimonials';
-import LeadForm from '@/components/LeadForm';
-import Footer from '@/components/Footer';
+// import LeadForm from '@/components/LeadForm';
+// import Footer from '@/components/Footer';
 
 export default function HomePage() {
   return (
@@ -20,10 +20,10 @@ export default function HomePage() {
         <Approach />
         <Process />
         <Testimonials />
-        <LeadForm />
+        {/* <LeadForm /> */}
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
