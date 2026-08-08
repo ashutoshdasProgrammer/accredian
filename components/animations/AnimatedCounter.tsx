@@ -1,7 +1,7 @@
 'use client';
 
 import gsap from 'gsap';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 type AnimatedCounterProps = {
   value: number;
@@ -15,16 +15,39 @@ export default function AnimatedCounter({
   decimals = 0,
 }: AnimatedCounterProps) {
   const [count, setCount] = useState(0);
+  const elementRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
-    const object = { value: 0 };
+    const element = elementRef.current;
 
-    const animation = gsap.to(object, {
+    if (!element) {
+      return;
+    }
+
+    const prefersReducedMotion = window.matchMedia(
+      '(prefers-reduced-motion: reduce)',
+    ).matches;
+
+    if (prefersReducedMotion) {
+      setCount(value);
+      return;
+    }
+
+    const counter = {
+      value: 0,
+    };
+
+    const animation = gsap.to(counter, {
       value,
-      duration: 1.4,
+      duration: 1.5,
       ease: 'power3.out',
+      scrollTrigger: {
+        trigger: element,
+        start: 'top 85%',
+        once: true,
+      },
       onUpdate: () => {
-        setCount(object.value);
+        setCount(counter.value);
       },
     });
 
@@ -34,9 +57,9 @@ export default function AnimatedCounter({
   }, [value]);
 
   return (
-    <>
+    <span ref={elementRef}>
       {count.toFixed(decimals)}
       {suffix}
-    </>
+    </span>
   );
 }

@@ -1,4 +1,6 @@
 import { ArrowUpRight, Play } from 'lucide-react';
+import FadeIn from '@/components/animations/FadeIn';
+import Link from 'next/link';
 
 function HeroVisual() {
   return (
@@ -64,6 +66,7 @@ export default function Hero() {
   return (
     <section id="top" className="surface-grid overflow-hidden pt-32 md:pt-44">
       <div className="mx-auto grid max-w-[1240px] items-center gap-12 px-5 pb-20 md:grid-cols-[1.04fr_.96fr] md:gap-14 md:px-8 md:pb-28">
+        <FadeIn>
         <div>
           <div className="eyebrow mb-8">
             Enterprise capability partner
@@ -92,14 +95,15 @@ export default function Hero() {
               </span>
             </a>
 
-            <a
+            <Link
               href="#approach"
               className="flex items-center gap-2 rounded-full border border-[#15213d]/25 px-6 py-4 text-[13px] font-bold uppercase tracking-[0.1em] transition-colors hover:bg-[#15213d]/5"
             >
               <Play size={14} fill="currentColor" />
               See our approach
-            </a>
+            </Link>
           </div>
+          <FadeIn/>
 
           <div className="mt-11 flex items-center gap-3 text-[11px] uppercase tracking-[0.13em] text-[#596273]">
             <span className="flex -space-x-2">
