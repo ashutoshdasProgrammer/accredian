@@ -30,6 +30,7 @@ For this project I have used tailwind.css to design the frontend.
 For smoother scolling animations I used GSAP, Scroll Trigger and lucide-icons for the website
 
 ### AI Usage Explanation
+- I used CHATGPT and GoogleAI
 - I made AI give me what all components i may require for proper structuring of the website
 - Generated a Figma model for the website and then redesigned it
 - Help me analyse the color combination for the website and effect for the webpage.
