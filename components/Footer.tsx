@@ -68,7 +68,7 @@ export default function Footer() {
               "Connect",
               [
                 ["Talk to our team", "#contact"],
-                ["hello@accredian.com", "mailto:hello@accredian.com"],
+                ["contactUs@accredian.com", "mailto:contactUs@accredian.com"],
                 ["LinkedIn", "https://www.linkedin.com"],
               ],
             ],
