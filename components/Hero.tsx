@@ -67,62 +67,64 @@ export default function Hero() {
     <section id="top" className="surface-grid overflow-hidden pt-32 md:pt-44">
       <div className="mx-auto grid max-w-[1240px] items-center gap-12 px-5 pb-20 md:grid-cols-[1.04fr_.96fr] md:gap-14 md:px-8 md:pb-28">
         <FadeIn>
-        <div>
-          <div className="eyebrow mb-8">
-            Enterprise capability partner
+          <div>
+            <div className="eyebrow mb-8">
+              Enterprise capability partner
+            </div>
+
+            <h1 className="max-w-[710px] text-[clamp(3.3rem,7vw,6.8rem)] font-semibold leading-[0.88] tracking-[-0.065em]">
+              Make your{' '}
+              <span className="serif-italic text-[#e76b5b]">next move</span>{' '}
+              count.
+            </h1>
+
+            <p className="mt-8 max-w-[500px] text-[17px] leading-[1.55] text-[#596273]">
+              We help people leaders build the capabilities that make change
+              stick — with expertise tailored to the work, not a catalogue.
+            </p>
+
+            <div className="mt-9 flex flex-wrap items-center gap-3">
+              <a
+                href="#contact"
+                className="group flex items-center gap-3 rounded-full bg-[#15213d] px-6 py-4 text-[13px] font-bold uppercase tracking-[0.1em] text-white transition-transform hover:-translate-y-1"
+              >
+                Build your pathway
+
+                <span className="grid h-6 w-6 place-items-center rounded-full bg-[#a8f21d] text-[#15213d] transition-transform group-hover:rotate-45">
+                  <ArrowUpRight size={14} />
+                </span>
+              </a>
+
+              <Link
+                href="#approach"
+                className="flex items-center gap-2 rounded-full border border-[#15213d]/25 px-6 py-4 text-[13px] font-bold uppercase tracking-[0.1em] transition-colors hover:bg-[#15213d]/5"
+              >
+                <Play size={14} fill="currentColor" />
+                See our approach
+              </Link>
+            </div>
+
+            <div className="mt-11 flex items-center gap-3 text-[11px] uppercase tracking-[0.13em] text-[#596273]">
+              <span className="flex -space-x-2">
+                <span className="grid h-8 w-8 place-items-center rounded-full border-2 border-[#f5f1e9] bg-[#a8f21d] text-[9px] font-bold">
+                  NR
+                </span>
+                <span className="grid h-8 w-8 place-items-center rounded-full border-2 border-[#f5f1e9] bg-[#e76b5b] text-[9px] font-bold">
+                  MG
+                </span>
+                <span className="grid h-8 w-8 place-items-center rounded-full border-2 border-[#f5f1e9] bg-[#9ebef0] text-[9px] font-bold">
+                  AT
+                </span>
+              </span>
+
+              Trusted by teams building what’s next
+            </div>
           </div>
+        </FadeIn>
 
-          <h1 className="max-w-[710px] text-[clamp(3.3rem,7vw,6.8rem)] font-semibold leading-[0.88] tracking-[-0.065em]">
-            Make your{' '}
-            <span className="serif-italic text-[#e76b5b]">next move</span>{' '}
-            count.
-          </h1>
-
-          <p className="mt-8 max-w-[500px] text-[17px] leading-[1.55] text-[#596273]">
-            We help people leaders build the capabilities that make change
-            stick — with expertise tailored to the work, not a catalogue.
-          </p>
-
-          <div className="mt-9 flex flex-wrap items-center gap-3">
-            <a
-              href="#contact"
-              className="group flex items-center gap-3 rounded-full bg-[#15213d] px-6 py-4 text-[13px] font-bold uppercase tracking-[0.1em] text-white transition-transform hover:-translate-y-1"
-            >
-              Build your pathway
-
-              <span className="grid h-6 w-6 place-items-center rounded-full bg-[#a8f21d] text-[#15213d] transition-transform group-hover:rotate-45">
-                <ArrowUpRight size={14} />
-              </span>
-            </a>
-
-            <Link
-              href="#approach"
-              className="flex items-center gap-2 rounded-full border border-[#15213d]/25 px-6 py-4 text-[13px] font-bold uppercase tracking-[0.1em] transition-colors hover:bg-[#15213d]/5"
-            >
-              <Play size={14} fill="currentColor" />
-              See our approach
-            </Link>
-          </div>
-          <FadeIn/>
-
-          <div className="mt-11 flex items-center gap-3 text-[11px] uppercase tracking-[0.13em] text-[#596273]">
-            <span className="flex -space-x-2">
-              <span className="grid h-8 w-8 place-items-center rounded-full border-2 border-[#f5f1e9] bg-[#a8f21d] text-[9px] font-bold">
-                NR
-              </span>
-              <span className="grid h-8 w-8 place-items-center rounded-full border-2 border-[#f5f1e9] bg-[#e76b5b] text-[9px] font-bold">
-                MG
-              </span>
-              <span className="grid h-8 w-8 place-items-center rounded-full border-2 border-[#f5f1e9] bg-[#9ebef0] text-[9px] font-bold">
-                AT
-              </span>
-            </span>
-
-            Trusted by teams building what’s next
-          </div>
-        </div>
-
-        <HeroVisual />
+        <FadeIn>
+          <HeroVisual />
+        </FadeIn>
       </div>
 
       <div className="border-y border-[#15213d]/10">
